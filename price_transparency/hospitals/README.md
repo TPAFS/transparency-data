@@ -1,6 +1,6 @@
 # Insurer Price Transparency
 
-The file `machine_readable_links` provides links to known MRFs for hospital price transparency. It is a flat file
+The file `machine_readable_links.csv` provides links to known MRFs for hospital price transparency. It is a flat file
 with the following schema:
 
 | Name | Description | Type | Definition | Required |
