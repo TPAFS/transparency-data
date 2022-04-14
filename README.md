@@ -19,14 +19,14 @@ and work towards equitable, accessible government-managed care for all. At the l
     - [Machine Readable Files](#machine-readable-files)
     - [Report Violations](#report-violations)
   - [Insurance Issuers](#insurance-issuers)
-    - [Machine Readable Files](#machine-readable-files)
-    - [Report Violations](#report-violations)
+    - [Machine Readable Files](#machine-readable-files-1)
+    - [Report Violations](#report-violations-1)
 - [Practices Transparency](#practices-transparency)
-  - [Hospitals](#hospitals)
-  - [Insurance Issuers](#insurance-issuers)
+  - [Hospitals](#hospitals-1)
+  - [Insurance Issuers](#insurance-issuers-1)
 - [Existence Transparency](#existence-transparency)
-  - [Hospitals](#hospitals)
-  - [Insurance Issuers](#insurance-issuers)
+  - [Hospitals](#hospitals-2)
+  - [Insurance Issuers](#insurance-issuers-2)
 - [Contributing](#contributing)
 
 ## Price Transparency
@@ -85,6 +85,8 @@ We will try to maintain a centralized source of truth for the urls of publicly a
 **Note:** As for hospitals, CMS outlines standard format for the file names for various insurer price transparency files that are required. Check out the repo here: https://github.com/CMSgov/price-transparency-guide for more details.
 
 #### Report Violations
+
+Coming soon.
 
 ## Practices Transparency
 
