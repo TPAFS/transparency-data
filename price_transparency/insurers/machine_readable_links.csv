@@ -1,4 +1,4 @@
 
-reporting_entity_name_legal, reporting_entity_name_common, reporting_entity_type, machine_readable_url, machine_readable_url_status, file_name, file_format, meets_standard, standard_issue, state, machine_readable_page, supplemental_url, last_updated_date
-United Healthcare,United Healthcare,,,down,,,,,,transparency-in-coverage.uhc.com,https://www.uhc.com/content/dam/uhcdotcom/en/HealthReform/PDF/Provisions/reform-external-transparancy-FAQs.pdf, 2022-04-13
+reporting_entity_name_legal, reporting_entity_name_common, reporting_entity_type, machine_readable_url, machine_readable_url_status, machine_readable_page, supplemental_url, file_name, file_format, meets_standard, standard_issue, state, last_updated_date
+United Healthcare,United Healthcare, insurer,transparency-in-coverage.uhc.com,down,transparency-in-coverage.uhc.com,https://www.uhc.com/content/dam/uhcdotcom/en/HealthReform/PDF/Provisions/reform-external-transparancy-FAQs.pdf,,,,,,2022-04-13
 
