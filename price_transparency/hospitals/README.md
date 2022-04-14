@@ -6,12 +6,12 @@ It is a flat file with the following schema:
 
 | Name | Description | Type | Definition | Required | Example Value |
 | ----- | ---- | ---- | ---------- | -------- | --------- |
-| **reporting_entity_name_legal** | Entity Name (legal) | String | The legal name of the entity publishing the machine-readable file, i.e. the hospital's legal name. | Yes | The Children's Hospital of Philadelphia |
-| **reporting_entity_name_common** | Entity Name (common) | String | The common name of the entity publishing the machine-readable file, i.e. the hospital's common name. | No | The Children's Hospital of Philadelphia |
+| **reporting_entity_name_legal** | Entity Name (legal) | String | The legal name of the entity publishing the machine-readable file, i.e. the hospital's legal name. | No | childrens hospital of philadelphia foundation |
+| **reporting_entity_name_common** | Entity Name (common) | String | The common name of the entity publishing the machine-readable file, i.e. the hospital's common name. | Yes | The Children's Hospital of Philadelphia |
 | **reporting_entity_type** | Entity Type | Enum("hospital", "other") | The type of entity that is publishing the machine-readable file. | No | hospital |
-| **machine_readable_url** | Machine Readable URL | String | A (purported) url for the machine readable file resource. | Yes | https://media.chop.edu/data/files/finance23-1352166_Children%E2%80%99sHospitalofPhiladelphia_standardcharges.csv |
-| **machine_readable_url_status** | Machine Readable URL Status | Enum("up", "down", "corrupt") | A status code for the purported url for the machine readable file resource. | Yes || 
-| **machine_readable_page** | Consumer Page URL | String | URL for an official consumer facing page containing a link to the MRF, maintained by the reporting entity. | No |  |
+| **machine_readable_url** | Machine Readable URL | String | A (purported) url for the machine readable file resource. | Yes |  	https://media.chop.edu/data/files/finance/23-1352166_Children%E2%80%99sHospitalofPhiladelphia_standardcharges.csv |
+| **machine_readable_url_status** | Machine Readable URL Status | Enum("up", "down", "corrupt") | A status code for the purported url for the machine readable file resource. | Yes | up| 
+| **machine_readable_page** | Consumer Page URL | String | URL for an official consumer facing page containing a link to the MRF, maintained by the reporting entity. | No | https://www.chop.edu/centers-programs/billing-and-insurance/understanding-hospital-charges |
 | **supplemental_url** | Supplemental URL | String | A url for any supplemental information pertaining to the particular transparency MRF in question. | No |  |
 | **file_name** | File Name | String | Default name of file served. | No | |
 | **file_format** | File Format | Enum("csv", "json", "xml", "other") | Format of the file. | Yes | csv |
