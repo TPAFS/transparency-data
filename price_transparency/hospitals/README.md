@@ -24,7 +24,7 @@ It is a flat file with the following schema:
 
 **Note:**
 
-The state_or_region entry, if entered, must be one of the following STATE_OR_REGION_ABBREV standardized abbreviation strings:
+The state_or_region entry, if entered, must be one of the following ABBREV standardized abbreviation strings:
 
 | State or Region | ABBREV |
 | ----------        | --------- |
