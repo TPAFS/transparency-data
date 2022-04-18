@@ -115,9 +115,10 @@ There are many partial sources for this sort of data, but, as far as we know, no
 
 Here are some examples of sources that can be used to generate partial or incomplete existence data:
 
+<!-- TODO: Add similar resources for other states here, or elsewhere. -->
+
 -  **federal marketplace plan data:** https://www.healthcare.gov/health-and-dental-plan-datasets-for-researchers-and-issuers/
 -  **state marketplace plan data:**
-<!-- TODO: Add similar resources for other states here, or elsewhere. -->
     - CA: https://www.insurance.ca.gov/01-consumers/110-health/20-look/hcpcarriers.cfm 
 - **federal marketplace practice and PUF data:** https://www.cms.gov/CCIIO/Resources/Data-Resources/marketplace-puf
 
