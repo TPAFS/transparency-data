@@ -5,9 +5,9 @@
 You may leave this block commented, or remove it.
 -->
 
-- [ ] Documentation upate
-- [ ] Data Submission
-- [ ] A different type of contribution
+- [ ] Documentation update.
+- [ ] Data submission.
+- [ ] A different type of contribution.
 
 
 # Summary
@@ -17,7 +17,7 @@ You may leave this block commented, or remove it.
 You may leave this block commented, or remove it. -->
 
 
-# Checklist:
+# Checklist
 
 <!-- Please check both boxes below by entering [x] (with no spaces), to indicate you're following the contribution guidelines.
 
