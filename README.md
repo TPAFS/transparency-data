@@ -13,6 +13,7 @@ advocacy groups, and other third parties will be empowered to end unjust practic
 and work towards equitable, accessible government-managed care for all. At the least, we hope that enough easily accessible data will ensure the worst abusers of our systems are recognized and held responsible by the people.
 
 ## Contents
+<!-- TODO: Figure out a method of creating TOC that actually works for github markdown rendering. -->
 
 - [Price Transparency](#price-transparency)
   - [Hospitals](#hospitals)
@@ -33,25 +34,23 @@ and work towards equitable, accessible government-managed care for all. At the l
 
 Under the Affordable Care Act (ACA), the Centers for Medicare and Medicaid Services (CMS) and the Department of Health and Human Services (HHS) have produced and implemented rules and regulations aimed at providing transparent access to pricing data across U.S. healthcare. There are many exciting developments in the scope and implications of these rules that are coming to fruition right now.
 
-This repository is meant to serve as a supplement to: the raw data that the transparency rules require organizations to serve to the public, and the consumer facing websites and resources provided by CMS and HHS. In particular, there are certain problems with the current implementations of these rules that leave gaps and pose barriers to effective use of the transparency data by the general public, and we hope to fill those gaps and lower those barriers.
+This repository is meant to serve as a supplement to the raw data that the transparency rules require organizations to serve to the public, and the consumer facing websites and resources provided by CMS and HHS. In particular, there are certain problems with the current implementations of these rules that leave gaps and pose barriers to effective use of the transparency data by the general public, and we hope to fill those gaps and lower those barriers.
 
 ### Hospitals
 
-The rules implemented by CMS and HHS require hospitals to provide public facing pricing data for certain standard charges and services. In short, each hospital must serve a file online, accessible by the public, that details a menu (with prices) for some of the services they provide. They also must honor (to an extent :/) the prices listed in that file. The file is referred to as a Machine Readable File (MRF). Price transparency of hospital standard charges rules are defined in CMS rule CMS-1717-F2 (originally published 11/15/2019). The final rules went into effect on 1/1/2021.
+The rules implemented by CMS and HHS pertaining to hospitals require hospitals to provide public facing pricing data for certain standard charges and services. In short, each hospital must serve a file online, accessible by the public, that details a menu (with prices) for some of the services they provide. They also must honor (to an extent :/) the prices listed in that file. The file is referred to as a Machine Readable File (MRF). Price transparency of hospital standard charges rules are defined in CMS rule CMS-1717-F2 (originally published 11/15/2019). The final rules went into effect on 1/1/2021.
 
 You can read about these Hospital Price Transparency rules in the following locations:
 
-- https://www.cms.gov/newsroom/fact-sheets/cy-2020-hospital-outpatient-prospective-payment-system-opps-policy-changes-hospital-price (Original CMS press release)
+- [Original CMS Press Release](https://www.cms.gov/newsroom/fact-sheets/cy-2020-hospital-outpatient-prospective-payment-system-opps-policy-changes-hospital-price)
 
-- https://www.hhs.gov/sites/default/files/cms-1717-f2.pdf (CMS fact sheet on the rule)
+- [CMS Fact Sheet](https://www.hhs.gov/sites/default/files/cms-1717-f2.pdf)
 
-- https://www.federalregister.gov/documents/2019/11/27/2019-24931/medicare-and-medicaid-programs-cy-2020-hospital-outpatient-pps-policy-changes-and-payment-rates-and#p-1010 (Federal Register Description)
+- [Federal Register Description (1)](https://www.federalregister.gov/documents/2019/11/27/2019-24931/medicare-and-medicaid-programs-cy-2020-hospital-outpatient-pps-policy-changes-and-payment-rates-and#p-1010)
 
-- https://www.govinfo.gov/content/pkg/FR-2019-11-27/pdf/2019-24931.pdf (Federal Register Description)
+- [Federal Register Description (2)](https://www.govinfo.gov/content/pkg/FR-2019-11-27/pdf/2019-24931.pdf)
 
-CMS also maintains a consumer facing webpage about these rules here:
-
-- https://www.cms.gov/hospital-price-transparency
+CMS also maintains a [consumer facing webpage](https://www.cms.gov/hospital-price-transparency) about the rules.
 
 #### Machine Readable Files
 
@@ -63,8 +62,7 @@ Having the urls for all such files in one location would be invaluable to consum
 
 We will try to maintain a centralized source of truth for the urls of publicly accessible MRFs for hospitals in the U.S. This data can be viewed in `price_transparency/hospitals/hospitals.csv`, and you can read about the schema of that file in `price_transparency/hospitals/README.md`.
 
-**Note:** While there is no centralized, government-run site that includes a list of all MRF urls, there is documentation provided by CMS about what form the file names of these MRFs should take, which might prove useful. Namely, in this CMS guide:
-https://www.cms.gov/files/document/steps-machine-readable-file.pdf
+**Note:** While there is no centralized, government-run site that includes a list of all MRF urls, there is documentation provided by CMS about what form the file names of these MRFs should take, which might prove useful. Namely, in [this CMS guide](https://www.cms.gov/files/document/steps-machine-readable-file.pdf)
 they describe that file name should follow the template:
 `<ein>_<hospital-name>_standardcharges.[json|xml|csv]`. If we had a full list of all hospital names and EINs in the U.S., and we could be sure each of them was following this rule strictly, this would be a way for us to obtain all of the MRF file names very easily. If we additionally knew how those files were being served in some consistent manner relative to a list of known hospital owned domains, we could automate the work we seek to accomplish in this subsection. This is an example of how lack of _existence transparency_ data can limit the utility of other data. See Existence Transparency for more details below.
 
@@ -73,38 +71,41 @@ You can read details and structure of the required pricing files via CMS documen
 #### Report Violations
 
 The final rules for hospital price transparency are currently in effect! Since the rules are new and enforcement has so far been limited, it is unclear how many hospitals are in strict compliance. If you observe hospitals who are not adhering to the requirements
-of the final rule, you should contact CMS directly reporting the violation. You can do so using this link:
-https://www.cms.gov/hospital-price-transparency/contact-us
+of the final rule, you should [contact CMS directly](https://www.cms.gov/hospital-price-transparency/contact-us) to report the violation.
 
 ### Insurance Issuers
+Just as there are rules implemented by CMS and HHS requiring pricing transparency from hospitals, there are also rules requiring pricing transparency from health insurers. These rules require group health plans and health insurance issuers to disclose certain pricing and cost-sharing information to the public. In
+particular, this includes providing cost-sharing information for certain covered services for particular providers, which combined with hospital pricing transparency can be invaluable to consumers trying to understand their out of pocket costs for particular services, at particular facilities, with particular insurance. Insurers must provide this cost information via MRFs, Price transparency rules for health insurers are defined in HHS rule 85 FR 72158  (originally published 11/27/2019). The final rules effectively start on 7/1/2022.
 
-<!-- TODO: Describe the insurance price transparency rule 85 FR 72158, and provide relevant documentation. -->
+You can read about the transparency rules for insurers in the following locations:
+
+- [Federal Register Description (1)](https://www.federalregister.gov/documents/2019/11/27/2019-25011/transparency-in-coverage)
+- [Federal Register Description (2)](https://www.govinfo.gov/app/details/FR-2020-11-12/2020-24591)
+- [CMS Consumer Webpage](https://www.cms.gov/healthplan-price-transparency)
+- [CMS MRF technical specification](https://github.com/CMSgov/price-transparency-guide)
 
 #### Machine Readable Files
 
-We will try to maintain a centralized source of truth for the urls of publicly accessible MRFs for insurers in the U.S. This data can be viewed in `price_transparency/insurers/insurers.csv`, and you can read about the schema of that file in `price_transparency/insurers/README.md`.
+Our goal for insurance pricing transparency is to maintain a centralized source of truth for the urls of publicly accessible MRFs for insurers in the U.S. This data can be viewed in `price_transparency/insurers/insurers.csv`, and you can read about the schema of that file in `price_transparency/insurers/README.md`.
 
-**Note:** As for hospitals, CMS outlines standard format for the file names for various insurer price transparency files that are required. Check out the repo here: https://github.com/CMSgov/price-transparency-guide for more details.
+**Note:** As for hospitals, CMS outlines standard format for the file names for various insurer price transparency files that are required. Check out the CMS technical specification repo [here](https://github.com/CMSgov/price-transparency-guide) for more details.
 
 #### Report Violations
 
-Coming soon.
+**Coming soon.**
 
 ## Practices Transparency
 
+**Coming soon.**
 <!-- TODO: Describe the broad goal of practices transparency, cite all existing rules, and known government provided data sources. . -->
 
 ### Hospitals
 
-For now, check out the existing CMS tools for comparing hospital practices and ratings:
-
-- https://www.medicare.gov/care-compare/?providerType=Hospital&redirect=true
+For now, check out the existing CMS [tools](https://www.medicare.gov/care-compare/?providerType=Hospital&redirect=true) for comparing hospital practices and ratings.
 
 ### Insurance Issuers
 
-For now, check out the existing insurer practice transparency data maintained by CMS (see e.g. the "transparency in coverage" puf files):
-
-- https://www.cms.gov/CCIIO/Resources/Data-Resources/marketplace-puf
+For now, check out the existing insurer [practice transparency data](https://www.cms.gov/CCIIO/Resources/Data-Resources/marketplace-puf) maintained by CMS (see e.g. the "transparency in coverage" puf files).
 
 ## Existence Transparency
 
@@ -117,10 +118,13 @@ Here are some examples of sources that can be used to generate partial or incomp
 
 <!-- TODO: Add similar resources for other states here, or elsewhere. -->
 
--  **federal marketplace plan data:** https://www.healthcare.gov/health-and-dental-plan-datasets-for-researchers-and-issuers/
--  **state marketplace plan data:**
-    - CA: https://www.insurance.ca.gov/01-consumers/110-health/20-look/hcpcarriers.cfm 
-- **federal marketplace practice and PUF data:** https://www.cms.gov/CCIIO/Resources/Data-Resources/marketplace-puf
+-  **Federal Marketplace Plan Data**
+    - [Healthcare.gov researcher csvs](https://www.healthcare.gov/health-and-dental-plan-datasets-for-researchers-and-issuers/)
+-  **State Marketplace Plan Data**:
+    - California
+        - [CA Department of Insurance](https://www.insurance.ca.gov/01-consumers/110-health/20-look/hcpcarriers.cfm)
+- **Federal Marketplace Practice Data**
+    - [CMS Public Use Files](https://www.cms.gov/CCIIO/Resources/Data-Resources/marketplace-puf)
 
 
 ### Hospitals
