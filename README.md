@@ -29,6 +29,7 @@ and work towards equitable, accessible government-managed care for all. At the l
   - [Hospitals](#hospitals-2)
   - [Insurance Issuers](#insurance-issuers-2)
 - [Contributing](#contributing)
+- [Contact](#contact)
 
 ## Price Transparency
 
@@ -137,6 +138,10 @@ We maintain a flat file describing insurers we know about in `existence_transpar
 
 ## Contributing
 
-We welcome contributions from all. We'll be providing templates for submitting issues and PRs soon, and in the meantime welcome feedback and discussion of any form.
+We welcome contributions from all, and feedback and discussion of any form.
 
-Contact info@persius.org for private correspondence.
+Please see `.github/CONTRIBUTING.md` for more information about how to contribute to this project, or head to the github **Discussions** tab to join or start a conversation.
+
+
+## Contact
+Feel free to reach out to community members, maintainers, or contributors via our discussions space with questions or comments. Contact info@persius.org for private correspondence if that is needed for any reason.
