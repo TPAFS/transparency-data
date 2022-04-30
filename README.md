@@ -144,4 +144,6 @@ Please see `.github/CONTRIBUTING.md` for more information about how to contribut
 
 
 ## Contact
-Feel free to reach out to community members, maintainers, or contributors via our discussions space with questions or comments. Contact info@persius.org for private correspondence if that is needed for any reason.
+Feel free to reach out to community members, maintainers, or contributors via our discussions space with questions or comments.
+
+Contact info@persius.org for private correspondence if that is needed for any reason.
