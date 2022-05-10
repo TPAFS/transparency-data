@@ -157,11 +157,13 @@ information regarding missing data, your contribution is most welcome.
 
 If you find this data useful in your work, please consider mentioning it, providing a link, or citing it to help increase our exposure:
 
-@misc{persius2022transparency,
-    title={Transparency Data},
-    howpublished={github},
-    year={2022}
-}
+  @misc{persius2022transparency,
+      author = {persius contributors},
+      title={Transparency Data},
+      publisher = {GitHub},
+      howpublished={\url{https://github.com/TPAFS/transparency-data}},
+      year={2022},
+  }
 
 
 ## Contact
