@@ -14,7 +14,7 @@ It is a flat file with the following schema:
 | **machine_readable_page** | Consumer Page URL | String | URL for an official consumer facing page containing a link to the MRF, maintained by the reporting entity. | No | https://www.chop.edu/centers-programs/billing-and-insurance/understanding-hospital-charges |
 | **supplemental_url** | Supplemental URL | String | A url for any supplemental information pertaining to the particular transparency MRF in question. | No |  |
 | **file_name** | File Name | String | Default name of file served. | No | |
-| **file_format** | File Format | Enum("csv", "json", "xml", "other") | Format of the file. | Yes | csv |
+| **file_format** | File Format | Enum("csv", "json", "xml", "zip/csv", "zip/json", "zip/xml", "other") | Format of the file. | Yes | csv |
 | **meets_standard** | Meets Standard | Enum("true", "false") | Whether the MRF name and format meet the required standard. | No | true |
 | **standard_issue** | Standard Issue | String | If standard is not met, a description of the discrepancy. | No |  |
 | **state_or_region** | State or Region | Enum(ABBREV) (see below) | State or region in which legal reporting entity is incorporated. | No | PA |
