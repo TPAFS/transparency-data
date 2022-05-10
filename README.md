@@ -29,6 +29,8 @@ and work towards equitable, accessible government-managed care for all. At the l
   - [Hospitals](#hospitals-2)
   - [Insurance Issuers](#insurance-issuers-2)
 - [Contributing](#contributing)
+- [Disclaimer](#disclaimer)
+- [Citation](#citation)
 - [Contact](#contact)
 
 ## Price Transparency
@@ -141,6 +143,25 @@ We maintain a flat file describing insurers we know about in `existence_transpar
 We welcome contributions from all, and feedback and discussion of any form.
 
 Please see `.github/CONTRIBUTING.md` for more information about how to contribute to this project, or head to the github **Discussions** tab to join or start a conversation.
+
+
+## Disclaimer
+
+While we aim to provide accurate and up to date information, we provide this data with no warranty or guarantee of it's accuracy. We will do the best we can to verify the integrity of data provided here, but you should use it at your own risk, and avoid relying solely on it for critical matters. If you know
+of any issues or mistakes in this data, please submit an issue or pull request, or contact the maintainers directly via the email listed below.
+
+In particular, if you are a representative of a health insurer, hospital or other provider and seek to correct any of our existing data, or provide
+information regarding missing data, your contribution is most welcome.
+
+## Citation
+
+If you find this data useful in your work, please consider mentioning it, providing a link, or citing it to help increase our exposure:
+
+@misc{persius2022transparency,
+    title={Transparency Data},
+    howpublished={github},
+    year={2022}
+}
 
 
 ## Contact
