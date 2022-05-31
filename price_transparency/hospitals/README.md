@@ -1,4 +1,4 @@
-# Insurer Price Transparency
+# Hospital Price Transparency
 
 The file `machine_readable_links.csv` provides links to known MRFs for hospital price transparency.
 
