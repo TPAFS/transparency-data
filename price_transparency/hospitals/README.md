@@ -18,9 +18,9 @@ It is a flat file with the following schema:
 | **meets_standard** | Meets Standard | Enum("true", "false") | Whether the MRF name and format meet the required standard. | No | true |
 | **standard_issue** | Standard Issue | String | If standard is not met, a description of the discrepancy. | No |  |
 | **state_or_region** | State or Region | Enum(ABBREV) (see below) | State or region in which legal reporting entity is incorporated. | No | PA |
-| **last_updated_date** | Last Updated Date | String | The date in which the MRF was last updated according to the organization. Date must be in an ISO 8601 format (i.e. YYYY-MM-DD). | Yes | 2022-04-14 |
+| **last_updated_date** | Last Updated Date | String | The date in which the MRF was last updated according to the organization. Date must be in an ISO 8601 format (i.e. YYYY-MM-DD). | No | 2022-04-14 |
 | **entry_date** | Entry Date | String | The date in which **this** record (not the MRF) was last updated/entered into the system. Date must be in an ISO 8601 format (i.e. YYYY-MM-DD). | Yes | 2022-04-14 |
-| **notes** | Notes | String | Miscellaneous notes for each entry. | No |  |
+| **notes** | Notes | String | Miscellaneous notes for each entry. | No | "Notes for row" |
 
 
 **Note:**
