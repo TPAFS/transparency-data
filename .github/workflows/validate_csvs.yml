@@ -1,0 +1,26 @@
+name: validate-csvs
+on:
+  workflow_dispatch:
+  pull_request:
+    types:
+      - opened
+    branches:    
+      - 'main'
+      - 'test_ci'
+    paths:
+      - '**.csv'
+jobs:
+  validate-hospital-prices:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build csv validator
+        run: cargo build --manifest-path ./validator/Cargo.toml --release
+      - name: Validate hospital price data
+        run: ./validator/target/release/validator ./price_transparency/hospitals/machine_readable_links.csv hospital_price_transparency
+      - name: Echo validation issue to user.
+        if: failure()
+        run: echo "There was an error validating your alterations to the hospital_price_transparency data.Please check the action logs for more detail, and verify your contribution conforms to the documented schema requirements."
+      - name: Validate insurer price data
+        run: ./validator/target/release/validator ./price_transparency/insurers/machine_readable_links.csv insurer_price_transparency
