@@ -10,7 +10,7 @@ on:
     paths:
       - '**.csv'
 jobs:
-  validate-hospital-prices:
+  validate-csvs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
