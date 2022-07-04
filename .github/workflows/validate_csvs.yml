@@ -8,7 +8,6 @@ on:
       - 'reopened'
     branches:    
       - 'main'
-      - 'test_ci'
     paths:
       - '**.csv'
   push:
