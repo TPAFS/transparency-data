@@ -3,12 +3,16 @@ on:
   workflow_dispatch:
   pull_request:
     types:
-      - opened
+      - 'opened'
+      - 'synchronize'
     branches:    
       - 'main'
       - 'test_ci'
     paths:
       - '**.csv'
+  push:
+    branches:
+      - 'main'
 jobs:
   validate-csvs:
     runs-on: ubuntu-latest
